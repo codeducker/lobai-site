@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="95" fill="#4A90E2" stroke="#2E5C8A" stroke-width="3"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8F4FD;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#1A4A6B" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- L 字母 -->
+  <g filter="url(#shadow)">
+    <path d="M 45 60 L 45 140 L 85 140 L 85 120 L 65 120 L 65 60 Z" fill="url(#textGradient)" stroke="#2E5C8A" stroke-width="1"/>
+  </g>
+  
+  <!-- o 字母 -->
+  <g filter="url(#shadow)">
+    <circle cx="110" cy="100" r="20" fill="none" stroke="url(#textGradient)" stroke-width="8"/>
+  </g>
+  
+  <!-- 装饰性元素 - 代表 AI 的几何图形 -->
+  <g opacity="0.8">
+    <!-- 三角形组合 -->
+    <polygon points="140,70 155,85 140,100" fill="#FFD700" opacity="0.7"/>
+    <polygon points="155,85 170,70 170,100" fill="#FFA500" opacity="0.7"/>
+    
+    <!-- 小圆点 -->
+    <circle cx="145" cy="120" r="3" fill="#FFD700"/>
+    <circle cx="160" cy="125" r="2" fill="#FFA500"/>
+    <circle cx="150" cy="135" r="2.5" fill="#FFD700"/>
+  </g>
+  
+  <!-- 底部文字 -->
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="url(#textGradient)">Lobai</text>
+  
+  <!-- 副标题 -->
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#E8F4FD" opacity="0.8">Tech Blog</text>
+</svg>
